@@ -1,0 +1,18 @@
+<ion-view title="Page" id="page1">
+  <ion-content padding="true" class="has-header">
+    <h1 id="page-heading1" style="color:#000000;">Companies</h1>
+    <form id="page-form1" class="list">
+      <label class="item item-select" id="page-select1">
+        <span class="input-label">Select</span>
+        <select ng-model="mdl.company">
+          <option>AAPL</option>
+          <option>GE</option>
+          <option>SBUX</option>
+          <option>WBA</option>
+        </select>
+
+      </label>
+    </form>
+    <button id="page-button1" class="button button-positive button-block" ui-sref="page2({company: mdl.company})">See data</button>
+
+  </ion-content>
